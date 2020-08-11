@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="/calcc.css" type="text/css"/>
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta http-equiv="expires" content="-1" />
+    
+    
+</head>
+<body>
+    <form>
+        <input class="display" name="display" type="text" id="display">
+    <table>
+        <tbody>
+            <tr>
+                <td><button id ="ac" class="w" type="button" onclick="clr()">AC</button></td>
+                <td><button id ="+/-" class="w" type="button" onclick="dis('-')">+/-</button></td>
+                <td><button id ="%" class="w" type="button" onclick="dis('%')">%</button></td>
+                <td><button id ="/"  class="o" type="button" onclick="dis('/')">&#247</button></td>
+            </tr>
+            <tr>
+                <td><button id ="7" class="b" type="button" onclick="dis(7)">7</button></td>
+                <td><button id ="8" class="b" type="button" onclick="dis(8)">8</button></td>
+                <td><button id ="9" class="b" type="button" onclick="dis(9)">9</button></td>
+                <td><button id ="x" class="o" type="button" onclick="dis('*')">x</button></td>
+            </tr>
+            <tr>
+                <td><button id ="4" class="b" type="button" onclick="dis(4)">4</button></td>
+                <td><button id ="5" class="b" type="button" onclick="dis(5)">5</button></td>
+                <td><button id ="6" class="b" type="button" onclick="dis(6)">6</button></td>
+                <td><button id ="-" class="o" type="button" onclick="dis('-')">-</button></td>
+            </tr>
+            <tr>
+                <td><button id ="1" class="b" type="button" onclick="dis(1)">1</button></td>
+                <td><button id ="2" class="b" type="button" onclick="dis(2)">2</button></td>
+                <td><button id ="3" class="b" type="button" onclick="dis(3)">3</button></td>
+                <td><button id ="+" class="o" type="button" onclick="dis('+')">+</button></td>
+            </tr>
+            <tr>
+                <td colspan=2><button id ="0" class="z" type="button" onclick="dis(0)">0</button></td>
+                <td><button id ="." class="b" type="button" onclick="dis('.')">.</button></td>
+                <td><button id ="=" class="o" type="button" onclick="solve()">=</button></td>
+            </tr>
+        </tbody>
+    </table>
+    </form>
+    <script src="/cscript.js"></script>
+   </body>
+</html>
